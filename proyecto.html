@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <title>Proyectos</title>
+  <style>
+    .botones {
+      display: flex;
+      justify-content: center;
+      gap: 24px;            
+      background-color: #000;
+      padding: 18px;
+    }
+    .botones button {
+      padding: 8px 16px;
+      border-radius: 6px;
+      border: none;
+      color: #000; 
+      cursor: pointer;
+      font-weight: 600;
+      background: #fff; 
+    }
+    .centro {
+      display: flex;
+      align-items: flex-start;
+      gap: 36px;
+      max-width: 1000px;
+      margin: 80px auto;
+      padding: 0 16px;
+    }
+    .centro img {
+      width: 260px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+    .parrafos {
+      max-width: 640px;
+      line-height: 1.5;
+      color: #222;
+    }
+    .parrafos p {
+      margin: 0 0 12px 0;
+    }
+    footer {
+      text-align: center;
+      background-color: #000;
+      color: #fff;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+    @media (max-width: 700px) {
+      .centro {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+      }
+      .centro img {
+        width: 200px;
+      }
+      .parrafos {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="botones">
+    <button onclick="llevar('Informacion')" class="animate__animated animate__bounceInLeft">Información</button>
+    <button onclick="llevar('Proyectos')" class="animate__animated animate__bounceInLeft">Proyectos</button>
+    <button onclick="llevar('Hobbies')" class="animate__animated animate__bounceInRight">Hobbies</button>
+    <button onclick="llevar('Contacto')" class="animate__animated animate__bounceInRight">Contacto</button>
+  </div>
+  <div class="centro">
+    <img src="Logo.jpg" alt="" class="animate__animated animate__fadeInLeft">
+    <div class="parrafos">
+        <p> Este es mi proyecto, este conto con 2 fases una que seria una alfa/beta en la cueal es un diccionario de lengaujes de señas pero con imagenes</p>
+        <p>Para la segunda fase se agrego un buscador y un formato de videos para que el entendimiento sea mejor</p>
+    </div>
+  </div>
+  <footer>Hola</footer>
+  <script src="f.js"></script>
+</body>
+</html>

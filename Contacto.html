@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <title>Proyectos</title>
+  <style>
+    .botones {
+      display: flex;
+      justify-content: center;
+      gap: 24px;            
+      background-color: #000;
+      padding: 18px;
+    }
+    .botones button {
+      padding: 8px 16px;
+      border-radius: 6px;
+      border: none;
+      color: #000; 
+      cursor: pointer;
+      font-weight: 600;
+      background: #fff; 
+      transition: background 0.3s;
+    }
+    .botones button:hover {
+      background: #ddd;
+    }
+    .centro {
+      display: flex;
+      align-items: flex-start;
+      gap: 36px;
+      max-width: 1000px;
+      margin: 80px auto;
+      padding: 0 16px;
+    }
+    .centro img {
+      width: 260px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+    .parrafos {
+      max-width: 640px;
+      line-height: 1.5;
+      color: #222;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #007bff;
+      box-shadow: 0 0 5px rgba(0,123,255,0.4);
+    }
+    button[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+    .error {
+      color: red;
+      font-size: 13px;
+      margin-top: -8px;
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      background-color: #000;
+      color: #fff;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+    @media (max-width: 700px) {
+      .centro {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+      }
+      .centro img {
+        width: 200px;
+      }
+      .parrafos {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="botones">
+    <button onclick="llevar('Informacion')" class="animate__animated animate__bounceInLeft">Información</button>
+    <button onclick="llevar('Proyectos')" class="animate__animated animate__bounceInLeft">Proyectos</button>
+    <button onclick="llevar('Hobbies')" class="animate__animated animate__bounceInRight">Hobbies</button>
+    <button onclick="llevar('Contacto')" class="animate__animated animate__bounceInRight">Contacto</button>
+  </div>
+
+  <div class="centro">
+    <img src="https://img.freepik.com/vector-gratis/botones-contacto-establecen_78370-9250.jpg?semt=ais_hybrid&w=740&q=80" alt="" class="animate__animated animate__fadeInLeft">
+    <div class="parrafos">
+      <h2>Contacto</h2>
+      <form id="formContacto" novalidate>
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" placeholder="Tu nombre completo">
+        <div class="error" id="errorNombre"></div>
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" placeholder="ejemplo@correo.com">
+        <div class="error" id="errorCorreo"></div>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+        <div class="error" id="errorMensaje"></div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+   </div>
+  <footer>Hola</footer>
+  <script src="f.js"></script>
+</body>
+</html>
