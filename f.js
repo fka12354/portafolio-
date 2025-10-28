@@ -1,11 +1,11 @@
 function llevar(Opcion) {
   if (Opcion === "Informacion") {
-    window.location.href = "Index.html";
+    window.location.href = "index.html";
   } else if (Opcion === "Proyectos") {
-    window.location.href = "Proyecto.html";}
+    window.location.href = "proyecto.html";}
   else if (Opcion === "Hobbies") {
-    window.location.href = "Hobbies.html";
+    window.location.href = "hobbies.html";
   } else if (Opcion === "Contacto") {
-    window.location.href = "Contacto.html";
+    window.location.href = "contacto.html";
   }
 }
