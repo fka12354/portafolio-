@@ -1,6 +1,6 @@
 function llevar(Opcion) {
   if (Opcion === "Informacion") {
-    window.location.href = "index.html";
+    window.location.href = "Index.html";
   } else if (Opcion === "Proyectos") {
     window.location.href = "Proyecto.html";}
   else if (Opcion === "Hobbies") {
